@@ -12,4 +12,6 @@ mic_btn.style.display = "flex";
   }
 }
 
+// document.querySelectorAll("contact-card").forEach((card) => {
 
+// })

@@ -10,6 +10,28 @@
   background-blend-mode: multiply;
 }
 
+#chat-disable-div{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 65%;
+  height: 100vh;
+  background-color: #161616;
+}
+
+.disable-chat-text{
+  width: fit-content;
+  height: fit-content;
+  color: #b0b0b0;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  letter-spacing: 0.5px;
+
+}
+
 .chat-msg-section::-webkit-scrollbar {
   width: 6px;             
 }

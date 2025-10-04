@@ -7,7 +7,7 @@ class contact_card extends HTMLElement {
   width: 380px;
   margin-right: 4px;
 //   background-color: #21c063;
-  height: 80px;
+  height: 75px;
   border-radius: 15px;
   display: flex;
   flex-direction: row;
@@ -19,6 +19,9 @@ class contact_card extends HTMLElement {
   background-color: #373838;
 }
 
+.contact-card.active {
+  background-color: #373838;
+}
 
 .nam-msg-tim-div{
   display: flex;
@@ -68,7 +71,8 @@ class contact_card extends HTMLElement {
 }
 
 .time{
-  color: #21c063;
+  /*color: #21c063;*/
+  color: #FFFFFF99;
   font-size: 12px;
   font-family: "Segoe UI", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, Ubuntu, Cantarell, "Fira Sans", sans-serif;
   font-feature-settings: "kern";
