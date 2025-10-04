@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main-page-style.css" />
+    <link rel="stylesheet" href="./styles/sidebar.css" />
+    <link rel="stylesheet" href="./styles/contacts-section.css" />
+    <link rel="stylesheet" href="./styles/chat-section.css" />
+    <title>WhatsApp</title>
+  </head>
+  <body>
+    <div id="main-body">
+      <div id="side-bar">
+        <div class="top-section">
+          <!-- chat-icon -->
+          <div class="icons">
+            <img
+              id="chat-icon"
+              src="assets/icons/chat.svg"
+              width="24px"
+              height="24px"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <!-- status-icon -->
+          <div class="icons">
+            <img
+              id="status-icon"
+              src="assets/icons/status.svg"
+              width="24px"
+              height="24px"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <!-- channel-icon -->
+          <div class="icons">
+            <img
+              id="channel-icon"
+              src="assets/icons/channel.svg"
+              width="24px"
+              height="24px"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <!-- communities-icon -->
+          <div class="icons">
+            <img
+              id="communities-icon"
+              src="assets/icons/communites.svg"
+              width="24px"
+              height="24px"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div id="seperator"></div>
+          <div class="icons">
+            <img
+              id="meta-icon"
+              src="assets/icons/meta-icon.png"
+              width="25px"
+              height="25px"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+        <div class="bottom-section">
+          <!-- setting-icon -->
+          <div class="icons">
+            <img
+              src="assets/icons/settings.svg"
+              width="24px"
+              height="24px"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="profile-img-div icons">
+            <img
+              class="profile-img"
+              src="assets/images/profile-img.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
+      <div id="contacts-section">
+        <div class="header-div">
+          <p>WhatsApp</p>
+          <div class="header-icons-div">
+            <!--new-chat-icon -->
+            <div class="icons">
+              <img
+                id="new-chat-icon"
+                src="assets/icons/new-chat-icon.svg"
+                width="24px"
+                height="24px"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <!--menu-icon -->
+            <div class="icons">
+              <img
+                id="menu-icon"
+                src="assets/icons/menu-icon.svg"
+                width="24px"
+                height="24px"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="search-div">
+          <div class="search" id="searchBox">
+            <!-- magnifier -->
+            <svg
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M21 21l-4.35-4.35"
+                stroke="#667085"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+
+              <path
+                d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z"
+                stroke="#667085"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <input
+              id="q"
+              type="search"
+              placeholder="Search or start new chat"
+              aria-label="Search"
+              autocomplete="off"
+            />
+            <button
+              class="clear-btn hidden"
+              id="clearBtn"
+              aria-label="Clear search"
+            >
+              <!-- simple X -->
+              <svg
+                viewBox="0 0 24 24"
+                width="14"
+                height="14"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M18 6L6 18M6 6l12 12"
+                  stroke="#333"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="filter-div">
+          <div class="filter all"><p>All</p></div>
+          <div class="filter"><p>Unread</p></div>
+          <div class="filter"><p>Favorites</p></div>
+          <div class="filter"><p>Groups</p></div>
+        </div>
+        <div class="contacts-div" id="contactsContainer">
+          <contact-card
+            src="assets/images/profile-img.png"
+            name="Zain Ali"
+            msg="This is a very long text message"
+            time="07:10 am"
+          ></contact-card>
+          <contact-card
+            src="assets/images/profile-img-1.jpg"
+            name="Ali Murad"
+            msg="This is a very long text message"
+            time="10:05 pm"
+          ></contact-card>
+          <contact-card
+            src="assets/images/profile-img-2.jpg"
+            name="Asad Ali"
+            msg="This is a very long text message"
+            time="06:00 am"
+          ></contact-card>
+          <contact-card
+            src="assets/images/profile-img-3.jpg"
+            name="Zeeshan Ali"
+            msg="This is a very long text message"
+            time="05:15 pm"
+          ></contact-card>
+          <contact-card
+            src="assets/images/profile-img-4.jpg"
+            name="Khalid Mehmood"
+            msg="This is a very long text message"
+            time="011:00 am"
+          ></contact-card>
+          <contact-card
+            src="assets/images/profile-img-5.webp"
+            name="Anas Ansari"
+            msg="This is a very long text message"
+            time="02:49 pm"
+          ></contact-card>
+          <contact-card
+            src="assets/images/profile-img-6.webp"
+            name="Saad Obaid"
+            msg="This is a very long text message"
+            time="01:10 pm"
+          ></contact-card>
+        </div>
+      </div>
+      <div id="chat-section">
+        <div class="chat-top-bar">
+          <div class="chat-top-profile-img-div">
+            <img src="assets/images/profile-img.png" alt="" srcset="" />
+          </div>
+          <div class="chat-top-nam-time-div">
+            <div class="chat-top-name">Zain Ali</div>
+            <div class="chat-top-time">Click for contact info</div>
+          </div>
+          <div class="chat-top-icons-div">
+            <div class="chat-top-search-icon">
+              <img
+                src="assets/icons/call-icon.svg"
+                width="28px"
+                height="28px"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="chat-top-search-icon">
+              <img
+                src="assets/icons/search-icon.svg"
+                width="28px"
+                height="28px"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="chat-top-menu-icon">
+              <img
+                src="assets/icons/menu-icon.svg"
+                width="28px"
+                height="28px"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="chat-msg-section">
+          <div class="messages" id="messages"></div>
+           <!-- <div class="test"></div> -->
+        </div>
+        <div class="chat-bottom-bar">
+          <div class="chat-bottom-msg-bar" id="chat-bottom-msg-bar">
+            <div class="bottom-add-icon-div">
+              <img src="assets/icons/add-icon.svg" alt="" srcset="" />
+            </div>
+            <div class="bottom-emoji-icon-div">
+              <img src="assets/icons/emoji-icon.svg" alt="" srcset="" />
+            </div>
+            <input
+              id="input-msg"
+              type="text"
+              oninput="change_btn()"
+              placeholder="Type a message"
+              aria-label="Message"
+              autocomplete="off"
+            />
+            <div id="send-btn-mic" class="bottom-mic-icon-div">
+              <img
+                class="bottom-mic-icon"
+                src="assets/icons/mic-icon.svg"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div id="send-btn-send" class="bottom-send-icon-div">
+              <img
+                class="bottom-send-icon"
+                src="assets/icons/send-msg-icon.svg"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="components/contact-card.js"></script>
+    <script src="scripts/main-page-script.js"></script>
+    <script src="scripts/messages.js"></script>
+  </body>
+</html>

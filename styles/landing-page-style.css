@@ -1,0 +1,38 @@
+body {
+    background-color: #161717;
+}
+
+#body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-logo{
+    fill: aliceblue;
+}
+
+.container{
+    width: 200px;
+    height: 300px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ecfafa;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.bottom-icon-text{
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+    align-items: center;
+    font-size: 14px;
+    color: #a2a2a2;
+}
